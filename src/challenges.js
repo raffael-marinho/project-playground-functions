@@ -9,7 +9,7 @@ function compareTrue(value1, value2) {
 
 // Desafio 2
 function calcArea(base, height) {
-  return((base * height) / 2);
+  return (base * height) / 2;
 }
 
 // Desafio 3
@@ -51,14 +51,13 @@ function catAndMouse(mouse, cat1, cat2) {
   let calc1 = mouse - cat1;
   let calc2 = mouse - cat2;
   if (calc1 > calc2) {
-    return cat2;
+    return 'cat2';
   } else if (calc2 > calc1) {
-    return cat1;
+    return 'cat1';
   } else if (calc1 === calc2) {
     return 'os gatos trombam e o rato foge';
   }
 }
-
 // Desafio 8
 function fizzBuzz() {
   // seu código aqui
