@@ -14,7 +14,7 @@ function calcArea(base, height) {
 
 // Desafio 3
 function splitSentence(string) {
-  string =string.split(" "); 
+  string = string.split(' ');
   return string;
 }
 
@@ -66,20 +66,20 @@ function fizzBuzz() {
 
 // Desafio 9
 function encode(all) {
-  all=all.replace(/a/g, "1");
-  all=all.replace(/e/g, "2");
-  all=all.replace(/i/g, "3");
-  all=all.replace(/o/g, "4");
-  all=all.replace(/u/g, "5");
+  all = all.replace(/a/g, '1');
+  all = all.replace(/e/g, '2');
+  all = all.replace(/i/g, '3');
+  all = all.replace(/o/g, '4');
+  all = all.replace(/u/g, '5');
   return all;
 }
 
 function decode(oll) {
-  oll=oll.replace(/1/g, "a");
-  oll=oll.replace(/2/g, "e");
-  oll=oll.replace(/3/g, "i");
-  oll=oll.replace(/4/g, "o");
-  oll=oll.replace(/5/g, "u");
+  oll = oll.replace(/1/g, 'a');
+  oll = oll.replace(/2/g, 'e');
+  oll = oll.replace(/3/g, 'i');
+  oll = oll.replace(/4/g, 'o');
+  oll = oll.replace(/5/g, 'u');
   return oll;
 }
 
