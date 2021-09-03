@@ -19,10 +19,13 @@ function splitSentence(string) {
 }
 
 // Desafio 4
-function concatName() {
-  // seu código aqui
+function concatName(name) {
+  let inicial = name[0];
+  let ultimo = name[name.length - 1];
+  let resultado = inicial + ', ' + ultimo;
+  return resultado;
 }
-
+console.log(concatName(['Lucas', 'Cassiano', 'Ferraz', 'Paolillo']));
 // Desafio 5
 function footballPoints(wins, ties) {
   let spots = wins * 3 + ties * 1;
@@ -60,8 +63,22 @@ function catAndMouse(mouse, cat1, cat2) {
 }
 
 // Desafio 8
-function fizzBuzz() {
-  // seu código aqui
+function fizzBuzz(div) {
+  let number = 0;
+  let resposta = [];
+  for (let i = 0; i < div.length; i++) {
+    number = div[i];
+    if (number % 3 === 0 || number % 5 === 0) {
+      resposta[i] = 'fizzBuzz';
+    } else if (number % 5 === 0) {
+      resposta[i] = 'buzz';
+    } else if (number % 3 === 0) {
+      resposta[i] = 'fizz';
+    } else {
+      resposta[i] = 'bug!';
+    }
+  }
+  return resposta;
 }
 
 // Desafio 9
