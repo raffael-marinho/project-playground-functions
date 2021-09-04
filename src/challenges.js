@@ -22,7 +22,7 @@ function splitSentence(string) {
 function concatName(name) {
   let inicial = name[0];
   let ultimo = name[name.length - 1];
-  let resultado = inicial + ', ' + ultimo;
+  let resultado = ultimo + ', ' + inicial;
   return resultado;
 }
 
@@ -68,7 +68,7 @@ function fizzBuzz(div) {
   let resposta = [];
   for (let i = 0; i < div.length; i++) {
     number = div[i];
-    if (number % 3 === 0 || number % 5 === 0) {
+    if (number % 3 === 0 && number % 5 === 0) {
       resposta[i] = 'fizzBuzz';
     } else if (number % 5 === 0) {
       resposta[i] = 'buzz';
