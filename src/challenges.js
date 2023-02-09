@@ -2,9 +2,8 @@
 function compareTrue(value1, value2) {
   if (value1 === true && value2 === true) {
     return true;
-  } else {
-    return false;
   }
+  return false;
 }
 
 // Desafio 2
@@ -22,7 +21,7 @@ function splitSentence(string) {
 function concatName(name) {
   let inicial = name[0];
   let ultimo = name[name.length - 1];
-  let resultado = ultimo + ', ' + inicial;
+  let resultado = `${ultimo}, ${inicial}`;
   return resultado;
 }
 
@@ -36,14 +35,14 @@ function footballPoints(wins, ties) {
 function highestCount(arr) {
   let bigger = arr[0];
   let repeat = 0;
-  for (let i = 0; i < arr.length; i++) {
+  for (let i = 0; i < arr.length; i += 1) {
     if (arr[i] > bigger) {
       bigger = arr[i];
     }
   }
-  for (let i = 0; i < arr.length; i++) {
+  for (let i = 0; i < arr.length; i += 1) {
     if (arr[i] === bigger) {
-      repeat++;
+      repeat += 1;
     }
   }
   return repeat;
@@ -55,9 +54,9 @@ function catAndMouse(mouse, cat1, cat2) {
   let calc2 = Math.abs(mouse - cat2);
   if (calc1 > calc2) {
     return 'cat2';
-  } else if (calc2 > calc1) {
+  } if (calc2 > calc1) {
     return 'cat1';
-  } else if (calc1 === calc2) {
+  } if (calc1 === calc2) {
     return 'os gatos trombam e o rato foge';
   }
 }
@@ -66,7 +65,7 @@ function catAndMouse(mouse, cat1, cat2) {
 function fizzBuzz(div) {
   let number = 0;
   let resposta = [];
-  for (let i = 0; i < div.length; i++) {
+  for (let i = 0; i < div.length; i += 1) {
     number = div[i];
     if (number % 3 === 0 && number % 5 === 0) {
       resposta[i] = 'fizzBuzz';
